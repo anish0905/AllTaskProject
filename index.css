@@ -4,26 +4,25 @@
     padding: 0;
 }
 
+
 #date{
     /* background-color: aqua; */
     display: flex;
 justify-content: flex-end;
 font-size: 20px;
+margin-right: 20px;
 
 color: aliceblue;
     float: right;
+    
 }
 
 nav{
-    width: 99vw;
+    width: 100%;
     height: 50px;
     background-color: black;
     color: wheat;
   
-    flex-wrap: nowrap;
-    
-
-
 }
 
 nav ul{
@@ -45,7 +44,7 @@ nav ul li a{
 }
 
 main img{
-    width: 99vw;
+    width: 100%;
 }
 
 
@@ -74,3 +73,39 @@ aside{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+      
+    }
+    #btn{
+        display: none;
+    }
+
+    nav{
+       display: grid;
+       width: 100%;
+       
+       
+      
+    }
+    li{
+        display: none;
+    }
+
+    #date{
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: flex-end;
+        font-size: 20px;
+        margin-right: 135px;
+        color: aliceblue;
+        float: right;
+    } 
+
+
+
+
+  }
